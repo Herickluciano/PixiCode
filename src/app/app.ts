@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+
+import { Component, NgModule } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,3 +11,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 export class App {
   protected title = 'pixicode';
 }
+
+

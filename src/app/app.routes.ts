@@ -8,6 +8,7 @@ import { Confiance } from './page/confiance/confiance';
 import { Expertise } from './page/expertise/expertise';
 import { Reference } from './page/reference/reference';
 
+
 export const routes: Routes = [
     { path: "", component:Home }, // le path doit rester un champ vide pour le prende au demarage
     { path: "contact", component:Contact },
