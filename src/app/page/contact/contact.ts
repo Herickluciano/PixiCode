@@ -10,11 +10,15 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./contact.css']
 })
 export class Contact {
+subscribe() {
+throw new Error('Method not implemented.');
+}
   title: any;
   name: any;
   time: any;
   message: any;
   email: any;
+messageStatus: any;
 
   sendEmail(form: any) {
     emailjs.send(

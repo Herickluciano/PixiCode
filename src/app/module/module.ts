@@ -1,18 +1,16 @@
-import { NgModule } from '@angular/core';
+// app.module.ts ou main.server.ts (selon config SSR)
 import { CommonModule } from '@angular/common';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-// importe directement Home (fais attention au chemin d'import)
-import { Home } from '../page/home/home';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    Home  // ici on importe le composant standalone
   ],
-  exports: [
-    Home  // on peut aussi l'exporter si besoin
+  providers: [
+    provideHttpClient(withFetch())  
   ]
 })
-export class Module {}
+export class AppModule {}

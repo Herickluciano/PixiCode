@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './confiance.css'
 })
 export class Confiance {
+subscribe() {
+throw new Error('Method not implemented.');
+}
+messageStatus: any;
 
 }

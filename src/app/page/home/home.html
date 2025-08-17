@@ -1,5 +1,4 @@
-<div class="app">
-    
+<div class="app"> 
 <div class="body">
 <div class="page text-white py-5">
 <div class="para_1 container">
@@ -24,7 +23,7 @@
 </div>
 <div class="partie_1 container">
  <h1 class="titre_1"> <strong>PixiCode</strong> - Agence  Marketing & Securite Digital</h1>
-<img src="images/line.png" alt="line" class="line ">
+<img src="images/line.png" alt="line" class="line vue_1">
 <h2 class="titre_2">Soyez visible là où vos clients vous cherchent  en tête des résultats Google</h2>
 <div class="detail">
 <img src="images/body_2.jpg" alt="body_2" class="body_2">
@@ -42,7 +41,7 @@
 <div class="clear"></div>
 <div class="partie_2 container">
  <h1 class="titre_1b">Une croissance avec une stratégie digitale sur mesure et performante</h1>
-<img src="images/line.png" alt="line-1" class="line-1 ">
+<img src="images/line.png" alt="line-1" class="line-1 vue_1">
 <h2 class="titre_2b">Avec des campagnes Google Ads ou Meta Ads parfaitement ciblées, vous augmentez votre visibilité immédiate</h2>
 <div class="detail">
  <p class="text_detail_1">alliant performance, visibilité et engagement. Grâce au référencement naturel (SEO),
@@ -69,19 +68,19 @@
       <strong>PixiCode</strong> conçoit et gère vos campagnes publicitaires sur Google Ads, Meta (Facebook/Instagram), LinkedIn ou 
       YouTube avec une approche data-driven. Nous ciblons précisément vos audiences pour maximiser le retour sur 
       investissement, augmenter votre notoriété et convertir vos prospects en clients.</p>
-    <p class="band_text">
+    <p class="band_text vue_1">
       <strong class="gros">Stratégie Réseaux Sociaux (social media)</strong><br>
       Développez une communauté engagée et une image de marque forte. Notre stratégie social media combine 
       création de contenu visuel et éditorial, calendrier de publication, animation de communauté et campagnes
        sponsorisées. Nous adaptons chaque action à votre audience pour augmenter l’interaction, la portée 
        organique et la fidélité à votre marque.</p>
-    <p class="band_text">
+    <p class="band_text vue_1">
       <strong class="gros">Stratégie de contenu (content marketing)</strong><br>
       Un contenu pertinent crée de la valeur, capte l’attention et améliore votre SEO. Chez <strong>PixiCode</strong>, nous 
       élaborons une stratégie éditoriale cohérente avec votre positionnement : articles de blog, vidéos, 
       infographies, newsletters... Chaque contenu est pensé pour informer, convaincre et convertir votre 
       audience tout en renforçant votre visibilité naturelle.</p>
-      <p class="band_text">
+      <p class="band_text vue_1">
       <strong class="gros">Stratégie Web & Mobile (expérience utilisateur)</strong><br>
       Un site web ou une application mobile n’est pas qu’un outil technique : c’est votre vitrine digitale. 
       <strong>PixiCode</strong> développe des plateformes ergonomiques, rapides et centrées sur l’expérience utilisateur. 
@@ -93,7 +92,7 @@
 <div class="clear"></div>
 <div class="partie_4 container">
  <h1 class="titre_1b">Exploitez la puissance de l’IA pour booster votre marketing digital</h1>
-<img src="images/line.png" alt="line-1" class="line-1 ">
+<img src="images/line.png" alt="line-1" class="line-1 vue_1">
 <h2 class="titre_2b">Chez <strong>PixiCode</strong>, nous intégrons les dernières avancées en intelligence artificielle pour transformer vos stratégies marketing.</h2>
 <div class="detail">
  <p class="text_detail_1"> Grâce à <strong>des solutions intelligentes et personnalisées</strong>, 
@@ -113,8 +112,8 @@
 
 <div class="clear"></div>
 <div class="partie_5 container">
- <h1 class="titre_1-5"> <strong>PixiCode</strong> - l’alliance stratégique entre <br>cybersécurité et marketing digital</h1>
-<img src="images/line.png" alt="line" class="line ">
+ <h1 class="titre_1-5 vue"> <strong>PixiCode</strong> - l’alliance stratégique entre <br>cybersécurité et marketing digital</h1>
+<img src="images/line.png" alt="line" class="line vue_1">
 <h2 class="titre_2">Marketing digital sécurisé : PixiCode pour une croissance sans faille.
   Le combo gagnant : marketing puissant & cybersécurité intelligente...
 </h2>
@@ -205,7 +204,7 @@
             <div class="col-lg-2 col-md-6 footer-section">
                 <h5 class="footer-detail">Menu</h5>
                 <ul class="footer-links">
-                    <li><a href="/">Acceruil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="about">À propos</a></li>
                     <li><a href="expertise">Expertises</a></li>
                     <li><a href="confiance">Creance</a></li>
@@ -228,25 +227,17 @@
                 <h5 class="footer-detail">Newsletter</h5>
                 <p class="footer-about">Bonjour Cher client, chez <strong>PixiCode</strong>, convertisez plus efficacement et fidélisez vos clients.</p>
                 <div class="footer-newsletter">
-                  <form #newsletterForm="ngForm" (ngSubmit)="subscribeNewsletter(newsletterForm)">
-  <input
-    type="email"
-    name="email"
-    [(ngModel)]="email"
-    placeholder="Entrez votre email"
-    required
-  />
-  <button type="submit" class="newsletter-btn">
-    <i class="fas fa-paper-plane"></i>
-  </button>
-</form>
+                   <form (ngSubmit)="subscribe()" #form="ngForm">
+    <input 
+      type="email" 
+      name="email" 
+      [(ngModel)]="email" 
+      placeholder="Votre email" 
+      required>
+    <button type="submit">S'inscrire</button>
+  </form>
 
-
-
-
-
-
-                    
+  <p>{{ messageStatus }}</p>   
                 </div>
             </div>
         </div>

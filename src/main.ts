@@ -1,6 +1,10 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { importProvidersFrom } from '@angular/core';
+import { Home } from './app/page/home/home'; // adapte le chemin
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(Home, {
+  providers: [
+    provideHttpClient(withFetch()),  // <-- active fetch pour HttpClient
+  ]
+}).catch(err => console.error(err));

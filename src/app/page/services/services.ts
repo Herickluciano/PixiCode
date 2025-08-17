@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './services.css'
 })
 export class Services {
+subscribe() {
+throw new Error('Method not implemented.');
+}
+messageStatus: any;
 
 }

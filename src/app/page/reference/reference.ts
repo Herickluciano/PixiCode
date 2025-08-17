@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './reference.css'
 })
 export class Reference {
+subscribe() {
+throw new Error('Method not implemented.');
+}
+messageStatus: any;
 
 }
