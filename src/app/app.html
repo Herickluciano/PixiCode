@@ -3,50 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
+  <title>luhamCode</title>
 </head>
-  <header>
-<nav class="navbar navbar-expand-lg navbar-light">
-<div class="container">
-<a class="navbar-brand" href="/"><img src="images/logo.jpg" alt="logo" class="logo"></a>
-<button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse footer-links" id="navbarNav">
-<ul class="navbar-nav ms-auto  active">
-<li class="nav-item">
-<a class="nav-link" routerLink ="/">Accueil</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" routerLink="about">À propos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" routerLink="expertise">Expertises</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" routerLink="confiance">Creance</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" routerLink="reference">Repere</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" routerLink="services">Services</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" routerLink="contact">Contact</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class="adresse_nav">
-<p>{{'pixicodedigital@gmail.com'}}<br>+39 327 803 6337 / +337 58 69 42 51</p>
-</div>
-</header>
 <body>
-  
+ 
 </body>
+<!-- Messenger Plugin de Chat Pixicode -->
+<div id="fb-root"></div>
 
+<!-- SDK Facebook -->
+<script async defer crossorigin="anonymous" 
+  src="https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js">
+</script>
+
+<!-- Plugin Messenger -->
+<div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="548003641722262"
+     theme_color="#4FB43B"
+     logged_in_greeting="Bonjour 👋 Bienvenue sur luhamCode ! Comment puis-je vous aider ?"
+     logged_out_greeting="Bonjour 👋 Connectez-vous à Messenger pour discuter avec nous.">
+</div>
+
+<!-- Bouton flottant WhatsApp -->
+<a class="watsapp" href="https://wa.me/+33758694251" target="_blank" ><strong>💬</strong></a>
+<router-outlet></router-outlet>
+<button class="btn-1 btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none" onclick="scrollToTop()" id="back-to-up">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button> 
 </html>
 
-<router-outlet></router-outlet>
+
+

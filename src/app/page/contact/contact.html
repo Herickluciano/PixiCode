@@ -1,282 +1,233 @@
-<div class="app"> 
+<header>
+   <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+         <a class="navbar-brand" href="/"><img src="images/luhamcode.jpg" alt="luhamcode" class="logo"></a>
+         <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse footer-links" id="navbarNav">
+            <ul class="navbar-nav ms-auto  active">
+               <li class="nav-item">
+                  <a class="nav-link" href ="/">Accueil</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="about">À propos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="expertise">Expertises</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="confiance">Creance</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="reference">Repere</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="services">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="adresse_nav">
+      <p>{{'luhamcode@gmail.com'}}<br>+39 327 803 6337 / +337 58 69 42 51</p>
+   </div>
+   <div class="drapeau">
+      <a href="/" rel="noopener noreferrer"><img src="images/france.jpg" alt="france" class="pays_1"></a> 
+      <a href="home_italie" rel="noopener noreferrer"><img src="images/italie.png" alt="italie" class="pays_2"></a>
+      <span class="lang">Langues</span>
+   </div>
+</header>
+<div class="app">
 <div class="body">
-<div class="page text-white py-5">
-<div class="para_1 container">
-<h2 class="display_4">Veillez nous excuser : la page demadee est en maintenance.</h2>
-<p class="lead"> <strong>PixiCode</strong>, une Agence marketing digital, composée d'experts expérimentés et collaborant
-     ensemble pour offrir des solutions dynamique et interactiver..</p>
-<p class="display">Protéger vos données.Valoriser votre image.<strong>PixiCode</strong>,l’expertise double.</p>
-<a class="btn btn-success resp-1" href="contact" role="button">Contactez-nous</a>
-</div>
-<a class="navbar-brand" href="/"><img src="images/head_1.jpg" alt="pixicode" class="head_1 "></a>
-<div class="container para_2">
-<div id="container">
-  <strong>PixiCode</strong>  
-  <div id="flip">
-    <div><div>Marketing digital</div></div>
-    <div><div>Solutions business </div></div>
-    <div><div>Communication & Securite</div></div>
-  </div>
-  Ensemble pour un succès digital!
-</div>
-</div>
-</div>
- <div class="partie_1 container">
- <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)" class="p-4 rounded shadow" style="background-color: #f8f9fa; max-width: 600px; margin: auto;">
-  
-  <!-- Titre -->
-  <div class="mb-3">
-    <label for="title" class="form-label fw-bold">Titre</label>
-    <input type="text" class="form-control border-success" id="title" name="title" [(ngModel)]="title" placeholder="Titre" required>
-  </div>
-
-  <!-- Nom -->
-  <div class="mb-3">
-    <label for="name" class="form-label fw-bold">Nom</label>
-    <input type="text" class="form-control border-success" id="name" name="name" [(ngModel)]="name" placeholder="Nom" required>
-  </div>
-
-  <!-- Devis demande -->
-  <div class="mb-3">
-    <label for="time" class="form-label fw-bold">Demandez un devis</label>
-    <input type="text" class="form-control border-success" id="time" name="time" [(ngModel)]="time" placeholder="demande de devis" required>
-  </div>
-
-  <!-- Email -->
-  <div class="mb-3">
-    <label for="email" class="form-label fw-bold">Email</label>
-    <input type="email" class="form-control border-success" id="email" name="email" [(ngModel)]="email" placeholder="Email" required>
-  </div>
-
-  <!-- Message -->
-  <div class="mb-3">
-    <label for="message" class="form-label fw-bold">Message</label>
-    <textarea class="form-control border-success" id="message" name="message" [(ngModel)]="message" rows="4" placeholder="Votre message..." required></textarea>
-  </div>
-
-  <!-- Bouton -->
-  <div class="text-center">
-    <button type="submit" class="btn fw-bold px-4" style="background-color: #4FB43B; color: white;">
-      Envoyer
-    </button>
-  </div>
-</form>
-
-</div>
-
-<div class="clear"></div>
-<!--<div class="partie_2 container">
- <h1 class="titre_1b">Une croissance avec une stratégie digitale sur mesure et performante</h1>
-<img src="images/line.png" alt="line-1" class="line-1 ">
-<h2 class="titre_2b">Avec des campagnes Google Ads ou Meta Ads parfaitement ciblées, vous augmentez votre visibilité immédiate</h2>
-<div class="detail">
- <p class="text_detail_1">alliant performance, visibilité et engagement. Grâce au référencement naturel (SEO),
-     votre entreprise se positionne durablement en tête des résultats Google. Avec une gestion stratégique des réseaux sociaux,
-      vous développez une communauté active et fidèle. La publicité en ligne, via Google Ads ou Meta Ads, vous
-       permet d’atteindre rapidement vos cibles avec un retour sur investissement optimisé.
-       <a class="btn btn-success" href="contact" role="button">Obtenir un devis</a></p>
- <img src="images/body_1.jpg" alt="body_1" class="body_1">
- </div>
-</div>
-<div class="clear"></div>
-
-<div class="band">
-  <div class="band_detail container">
-    <p class="band_text">
-      <strong class="gros">Stratégie SEO <br> (référencement naturel)</strong><br>
-      Être visible là où vos clients vous cherchent, c’est la promesse du SEO. Chez  <strong>PixiCode</strong>, nous élaborons une
-       stratégie de référencement naturel sur mesure, basée sur des analyses de mots-clés, l’optimisation technique
-        de votre site, la création de contenus à forte valeur ajoutée et une stratégie de netlinking efficace.
-       Objectif : atteindre les premières positions sur Google et attirer un trafic qualifié, durable et rentable.
-    </p>
-    <p class="band_text">
-      <strong class="gros">Stratégie SEA <br> (publicité en ligne)</strong><br>
-      <strong>PixiCode</strong> conçoit et gère vos campagnes publicitaires sur Google Ads, Meta (Facebook/Instagram), LinkedIn ou 
-      YouTube avec une approche data-driven. Nous ciblons précisément vos audiences pour maximiser le retour sur 
-      investissement, augmenter votre notoriété et convertir vos prospects en clients.</p>
-    <p class="band_text">
-      <strong class="gros">Stratégie Réseaux Sociaux (social media)</strong><br>
-      Développez une communauté engagée et une image de marque forte. Notre stratégie social media combine 
-      création de contenu visuel et éditorial, calendrier de publication, animation de communauté et campagnes
-       sponsorisées. Nous adaptons chaque action à votre audience pour augmenter l’interaction, la portée 
-       organique et la fidélité à votre marque.</p>
-    <p class="band_text">
-      <strong class="gros">Stratégie de contenu (content marketing)</strong><br>
-      Un contenu pertinent crée de la valeur, capte l’attention et améliore votre SEO. Chez <strong>PixiCode</strong>, nous 
-      élaborons une stratégie éditoriale cohérente avec votre positionnement : articles de blog, vidéos, 
-      infographies, newsletters... Chaque contenu est pensé pour informer, convaincre et convertir votre 
-      audience tout en renforçant votre visibilité naturelle.</p>
-      <p class="band_text">
-      <strong class="gros">Stratégie Web & Mobile (expérience utilisateur)</strong><br>
-      Un site web ou une application mobile n’est pas qu’un outil technique : c’est votre vitrine digitale. 
-      <strong>PixiCode</strong> développe des plateformes ergonomiques, rapides et centrées sur l’expérience utilisateur. 
-      Notre stratégie UX/UI vise à offrir une navigation fluide, intuitive et performante, pour favoriser 
-      l’engagement et la conversion..</p>
-  </div>
-</div>
-
-<div class="clear"></div>
-<div class="partie_4 container">
- <h1 class="titre_1b">Exploitez la puissance de l’IA pour booster votre marketing digital</h1>
-<img src="images/line.png" alt="line-1" class="line-1 ">
-<h2 class="titre_2b">Chez <strong>PixiCode</strong>, nous intégrons les dernières avancées en intelligence artificielle pour transformer vos stratégies marketing.</h2>
-<div class="detail">
- <p class="text_detail_1"> Grâce à <strong>des solutions intelligentes et personnalisées</strong>, 
-  nous optimisons votre visibilité, affinons votre ciblage, et renforçons l’engagement 
-  de vos clients. De l’automatisation des campagnes à l’analyse prédictive, l’IA devient 
-  un véritable levier de performance pour propulser votre croissance digitale.
-   Confiez-nous votre stratégie : nous la rendons plus rapide, plus précise,
-    et centrée sur les résultats.Chez <strong>PixiCode</strong>, nous intégrons la puissance de l’intelligence
-     artificielle pour transformer vos idées en solutions digitales performantes. Grâce à des 
-     technologies avancées comme l’IA générative, l’analyse prédictive et les algorithmes 
-     intelligents, nous optimisons vos processus métiers, automatisons vos tâches répétitives et
-      personnalisons l’expérience client.
-       <a class="btn btn-success" href="contact" role="button">Obtenir un devis</a></p>
- <img src="images/ia.jpg" alt="IA_pixiCode" class="ia">
- </div>
-</div>
-
-<div class="clear"></div>
-<div class="partie_5 container">
- <h1 class="titre_1-5"> <strong>PixiCode</strong> - l’alliance stratégique entre <br>cybersécurité et marketing digital</h1>
-<img src="images/line.png" alt="line" class="line ">
-<h2 class="titre_2">Marketing digital sécurisé : PixiCode pour une croissance sans faille.
-  Le combo gagnant : marketing puissant & cybersécurité intelligente...
-</h2>
-<div class="detail">
-<img src="images/hacker.jpg" alt="hacker" class="hacker">
- <p class="text_detail">Chez PixiCode, nous combinons marketing digital performant et sécurité informatique avancée pour offrir à nos clients une croissance en ligne durable et protégée. Dans un monde où la visibilité numérique est cruciale mais les cybermenaces omniprésentes, notre double expertise garantit à la fois une stratégie marketing percutante et une infrastructure numérique sécurisée. Que vous soyez une startup, une PME ou une grande entreprise, nous veillons à ce que vos campagnes soient efficaces, vos données protégées et votre image de marque renforcée. Faites le choix d’un partenaire qui pense performance et protection.
-      <a class="btn btn-success" href="contact" role="button">Obtenir un devis</a>
-    </p>
-</div>
-</div>
-<div class="clear"></div>
-
-<div class="partie_3 container">
-  <h1 class="titre_3b">Expertise Digitale 360°  <strong>PixiCode</strong></h1>
-  <div class="detail">
-    <h2 class="titre_2b_3">Propulsez votre croissance avec une stratégie digitale sur mesure,en exploitant 
-      la puissance de la publicité en ligne.Avec des campagnes Google Ads ou Meta Ads parfaitement ciblées, 
-      vous augmentez votre visibilité immédiate,
-       générez des leads qualifiés et boostez vos conversions tout en maîtrisant votre budget.</h2>
- <p class="text_detail_3"> <strong>PixiCode</strong> est une agence digitale 360° spécialisée dans la conception de 
-  stratégies sur mesure alliant marketing digital,développement web et mobile,communication et design.
-   Nous accompagnons les entreprises dans leur croissance grâce à des solutions personnalisées : 
-   référencement naturel (SEO), publicité en ligne (Google Ads, Meta Ads),gestion des réseaux sociaux,
-    création de sites web et d’applications mobiles, identité visuelle,production de contenu et 
-    conseils stratégiques.Notre approche repose sur l’écoute, l’innovation et la performance, avec
-     pour objectif de maximiser votre
-   visibilité, renforcer votre image de marque et générer des résultats concrets et mesurables.</p>
-       </div>
-    <div class="service container">
-    <figure class="snip0061 red">
-  <a href=""><img src="images/digital.jpg" alt="digital-marketing" class="img-fig" /></a>
-  <figcaption>
-    <h2>Stratégie<span>& Conseil Digital</span></h2>
-    <p>Votre performance commence par un bon marketing digital..</p>
-    <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-email-unread"></i></a><a href="#"><i class="ion-ios-star"></i></a></div>
-  </figcaption>
-  <div class="position"><strong>Marketing digital</strong><p> <strong>PixiCode</strong>, l’expertise au service de votre croissance.</p> </div>
-</figure>
-
-<figure class="snip0061 green"><img src="images/application2.jpg" alt="sample8" />
-  <figcaption>
-    <h2>Creation <span>mobile & web</span></h2>
-    <p> <strong>PixiCode</strong>. Marketing digital, web et mobile sur mesure..</p>
-    <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone"></i></a></div>
-  </figcaption>
-  <div class="position"><strong>Application mobile & web</strong><p> <strong>PixiCode</strong>. Connectez vos idées au digital, du mobile au web.</p> </div>
-</figure>
-
-<figure class="snip0061 black"><img src="images/web.jpg" alt="site" />
-  <figcaption>
-    <h2>Developpement <br><span>de site web</span></h2>
-    <p>Donnez du pouvoir à vos idées avec <strong>PixiCode</strong>..</p>
-    <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone"></i></a></div>
-  </figcaption>
-   <div class="position"><strong>Développement de site web</strong><p> <strong>PixiCode</strong>. Chaque clic compte, chaque stratégie performe.</p> </div>
-</figure>
-
-<figure class="snip0061 blue"><img src="images/application.jpg" alt="application" />
-  <figcaption>
-    <h2>Communication<br><span>Business</span></h2>
-    <p> <strong>PixiCode</strong>. La communication qui fait grandir votre business.</p>
-    <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone"></i></a></div>
-  </figcaption>
-   <div class="position"><strong>Communication & Business</strong><p>La communication au service de votre stratégie business.</p> </div>
-</figure>
-    </div>
-</div>
-
-</div> -->
-
-  <!-- debut du footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
+   <div class="page text-white py-5">
+      <a class="navbar-brand" href="/">
+      <img src="images/head_1.jpg" alt="luhamcode" class="head_1_page">
+      </a>
+      <div class="container para_2">
+         <div id="container_page">
+            <strong>LuhamCode</strong>
+            <span class="indic"><a href="/" role="button"> Accueil</a>-> <span class="active">Contact</span></span>   
+            <div id="flip">
+               <div>
+                  <div>Marketing digital</div>
+               </div>
+               <div>
+                  <div>Solutions business </div>
+               </div>
+               <div>
+                  <div>Communication & Securite</div>
+               </div>
+            </div>
+            Ensemble pour un succès digital!
+         </div>
+      </div>
+   </div>
+   <div class="partie_1 container">
+      <div class="resp">
+         <h2 class="titre_1_contact"> <strong>luhamCode</strong> - Agence  Marketing & Securite Digital</h2>
+         <p class="text_contact">Chez LuhamCode, nous restons à l’écoute de vos besoins et de vos projets digitaux.
+            Que vous souhaitiez obtenir un devis, poser une question ou simplement échanger sur vos idées, notre équipe est disponible pour vous répondre dans les plus brefs délais.
+            Remplissez le formulaire ci-dessous ou contactez-nous directement par téléphone ou par email. Nous serons ravis de vous accompagner dans la réussite de votre projet numérique.
+         </p>
+      </div>
+      <section class="contact_us ">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="contact_inner">
+                     <div class="row">
+                        <div class="col-md-10">
+                           <div class="contact_form_inner">
+                              <div class="contact_field">
+                                 <h3 class="mb-3"> Parlez maintenant..!</h3>
+                                 <p class="mb-4">
+                                    Présents en <strong>France</strong> et en <strong>Italie</strong>,<br />
+                                    nous faisons de vos idées digitales une réalité.<br />
+                                    🚀 Un projet, une question ? Parlons-en dès aujourd’hui !!
+                                 </p>
+                                 <!-- FORMULAIRE -->
+                                 <form id="contact-form" action="#" method="post">
+                                    <!-- Nom -->
+                                    <div class="mb-3">
+                                       <label for="name" class="form-label">Nom complet</label>
+                                       <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required />
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="mb-3">
+                                       <label for="email" class="form-label">Adresse email</label>
+                                       <input type="email" class="form-control" id="email" name="email" placeholder="exemple@email.com" required />
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="mb-3">
+                                       <label for="message" class="form-label">Votre message</label>
+                                       <textarea class="form-control" id="message" name="message" rows="4" placeholder="Écrivez votre message..." required></textarea>
+                                    </div>
+                                    <!-- Consentement -->
+                                    <div class="form-check mb-3">
+                                       <input class="form-check-input" type="checkbox" id="politic" required />
+                                       <label class="form-check-label" for="politic">
+                                       J’accepte la <a href="politique" class="text-success">Politique de confidentialité</a>
+                                       conformément au RGPD.
+                                       </label>
+                                    </div>
+                                    <!-- Bouton ENVOYER (lié au formulaire) -->
+                                    <button type="submit" class="btn btn-success w-100">
+                                    🚀 Envoyer
+                                    </button>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-2">
+                           <div class="right_conatct_social_icon d-flex align-items-end">
+                              <div class="socil_item_inner d-flex">
+                                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="contact_info_sec">
+                        <h4>Contact Info</h4>
+                        <div class="d-flex info_single align-items-center">
+                           <i class="fas fa-headset"></i>
+                           <span>Services Commercial Italie:<br/> +39 327 803 6337</span>
+                        </div>
+                        <div class="d-flex info_single align-items-center">
+                           <i class="fas fa-headset"></i>
+                           <span>Service Commercial France :<br/> +33 7 58 69 42 51</span>
+                        </div>
+                        <div class="d-flex info_single align-items-center">
+                           <i class="fas fa-envelope-open-text"></i>
+                           <span>{{'luhamcode@gmail.com'}}</span>
+                        </div>
+                        <div class="d-flex info_single align-items-center">
+                           <i class="fas fa-map-marked-alt"></i>
+                           <span> 65+ Service city across Africa, USA, Canada & UE</span>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="slogan">“LuhamCode – L’innovation digitale qui rapproche le monde.”</span>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+   <!-- debut du footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
             <div class="col-lg-4 footer-section">
-                <h1 class="Pixicode">Pixi<span>Code</span></h1>
-                <p class="footer-about">Depuis 2024 notre expertise avérée en marketing digital à proposer des stratégies personnalisées et orientées, ainsi qu'un accompagnement. Notre approche structurée à une communication transparente et des indicateurs de performance clairs, fait de nous un partenaire adapté à vos objectifs de développement en ligne.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                    <a class="navbar-brand" href="/"><img src="images/logo.jpg" alt="logo" class="logo"></a>
-                </div>
+               <h1 class="Pixicode">Luham<span>Code</span></h1>
+               <p class="footer-about">Depuis 2024 notre expertise avérée en marketing digital à proposer des 
+                  stratégies personnalisées et orientées, ainsi qu'un accompagnement. Notre approche structurée à une 
+                  communication transparente et des indicateurs de performance clairs, fait de nous un partenaire adapté à vos objectifs de développement en ligne.
+               </p>
+               <div class="social-links">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                  <a class="navbar-brand" href="/"><img src="images/luhamcode.jpg" alt="luhamcode" class="logo"></a>
+               </div>
             </div>
-
             <div class="col-lg-2 col-md-6 footer-section">
-                <h5 class="footer-detail">Menu</h5>
-                <ul class="footer-links">
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="about">À propos</a></li>
-                    <li><a href="expertise">Expertises</a></li>
-                    <li><a href="confiance">Creance</a></li>
-                    <li><a href="reference">Repere</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
+               <h5 class="footer-detail">Menu</h5>
+               <ul class="footer-links">
+                  <li><a href="/">Accueil</a></li>
+                  <li><a href="about">À propos</a></li>
+                  <li><a href="expertise">Expertises</a></li>
+                  <li><a href="confiance">Creance</a></li>
+                  <li><a href="reference">Repere</a></li>
+                  <li><a href="contact">Contact</a></li>
+               </ul>
             </div>
-
             <div class="col-lg-2 col-md-6 footer-section">
-                <h5 class="footer-detail">Support</h5>
-                <ul class="footer-links">
-                    <li><a href="mention">Mentions legales</a></li>
-                    <li><a href="utilition">Politique d'utilisation</a></li>
-                    <li><a href="securite">Protection des donnees</a></li>
-                    <li><a href="cookis">cookis</a></li>
-                </ul>
+               <h5 class="footer-detail">Support</h5>
+               <ul class="footer-links">
+                  <li><a href="mention">Mentions legales</a></li>
+                  <li><a href="politique">Politique d'utilisation</a></li>
+                  <li><a href="protection">Protection des donnees</a></li>
+                  <li><a href="cookis">cookis</a></li>
+               </ul>
             </div>
-
             <div class="col-lg-4 footer-section">
-                <h5 class="footer-detail">Newsletter</h5>
-                <p class="footer-about">Bonjour Cher client, chez <strong>PixiCode</strong>, convertisez plus efficacement et fidélisez vos clients.</p>
-                <div class="footer-newsletter">
-                   <form (ngSubmit)="subscribe()" #form="">
-    <input 
-      type="email" 
-      name="email"  
-      placeholder="Votre email" 
-      required>
-    <button type="submit">S'inscrire</button>
-  </form>
-
-  <p>{{ messageStatus }}</p>   
-                </div>
+               <h5 class="footer-detail">Newsletter</h5>
+               <p class="footer-about">Bonjour Cher client, chez <strong>luhamCode</strong>, 
+                  convertisez plus efficacement et fidélisez vos clients.
+               </p>
+               <div class="footer-newsletter">
+                  <form (ngSubmit)="subscribe()" #form="ngForm">
+                  <input 
+                  type="email" 
+                  name="email" 
+                  [(ngModel)]="email" 
+                  placeholder="Votre email" 
+                  required>
+                  <button class="btn" type="submit">S'inscrire</button>
+                  </form>
+                  <p>{{ messageStatus }}</p>
+               </div>
             </div>
-        </div>
-
-        <div class="footer-bottom">
+         </div>
+         <div class="footer-bottom">
             <!-- <ul class="footer-bottom-links">
-                <h6 class="footer-detail">Clique ces lien -> </h6>
-                <li><a href="payemacaution">PayeMaCaution</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="portefolio">Portefolio</a></li>
-            </ul> -->
-            <span class="fin">© 2024 PixiCode [by Bleguy Herick Luciano : {{'pixicodedigital@gmail.com'}}, 0039 327 803 6337 & 00337 58 69 42 51] .  All rights reserved.</span>
-        </div>
-    </div>
-</footer>
-
+               <h6 class="footer-detail">Clique ces lien -> </h6>
+               <li><a href="payemacaution">PayeMaCaution</a></li>
+               <li><a href="blog">Blog</a></li>
+               <li><a href="portefolio">Portefolio</a></li>
+               </ul> -->
+            <span class="fin">© 2024 luhamCode [by Bleguy Herick Luciano : {{'luhamcode@gmail.com'}}, 0039 327 803 6337 & 00337 58 69 42 51] .  All rights reserved.</span>
+         </div>
+      </div>
+      <button class="btn-1 btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none" onclick="scrollToTop()" id="back-to-up">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+   </footer>
 </div>

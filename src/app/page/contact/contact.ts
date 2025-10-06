@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // ✅ Import obligatoire pour ngModel
+import { FormsModule } from '@angular/forms'; //  Import obligatoire pour ngModel
 import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule], // ✅ Ajoute FormsModule ici
+  imports: [FormsModule], //  Ajoute FormsModule ici
   templateUrl: './contact.html',
   styleUrls: ['./contact.css']
 })

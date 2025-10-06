@@ -7,6 +7,10 @@ import { Services } from './page/services/services';
 import { Confiance } from './page/confiance/confiance';
 import { Expertise } from './page/expertise/expertise';
 import { Reference } from './page/reference/reference';
+import { Mention } from './page/mention/mention';
+import { Politique } from './page/politique/politique';
+import { Protection } from './page/protection/protection';
+import { Cookis } from './page/cookis/cookis';
 
 
 export const routes: Routes = [
@@ -17,5 +21,9 @@ export const routes: Routes = [
     { path: "expertise", component:Expertise },
     { path: "reference", component:Reference },
     { path: "services", component:Services },
+    { path: "mention", component:Mention },
+    { path: "politique", component:Politique },
+    { path: "protection", component:Protection },
+    { path: "cookis", component:Cookis },
     { path: "**", component:NotFound }
 ];

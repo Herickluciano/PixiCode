@@ -30,6 +30,8 @@
     "@angular/router": "^20.0.0",
     "@angular/ssr": "^20.0.5",
     "@emailjs/browser": "^4.4.1",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
     "emailjs-com": "^3.2.0",
     "express": "^5.1.0",
     "php": "^1.1.0",
@@ -51,16 +53,14 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.8.2"
   },
-  
   "configurations": {
-  "production": {
-    "optimization": true,
-    "outputHashing": "all",
-    "sourceMap": false,
-    "extractCss": true,
-    "namedChunks": false,
-    "aot": true
+    "production": {
+      "optimization": true,
+      "outputHashing": "all",
+      "sourceMap": false,
+      "extractCss": true,
+      "namedChunks": false,
+      "aot": true
+    }
   }
-}
-
 }
