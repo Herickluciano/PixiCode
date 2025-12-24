@@ -11,6 +11,14 @@ import { Mention } from './page/mention/mention';
 import { Politique } from './page/politique/politique';
 import { Protection } from './page/protection/protection';
 import { Cookis } from './page/cookis/cookis';
+import { Italy } from './page/italy/italy';
+import { Chisiamo } from './page/chisiamo/chisiamo';
+import { Competenze } from './page/competenze/competenze';
+import { Fiducia } from './page/fiducia/fiducia';
+import { Riferimenti } from './page/riferimenti/riferimenti';
+import { Servizi } from './page/servizi/servizi';
+import { Contatto } from './page/contatto/contatto';
+
 
 
 export const routes: Routes = [
@@ -25,5 +33,12 @@ export const routes: Routes = [
     { path: "politique", component:Politique },
     { path: "protection", component:Protection },
     { path: "cookis", component:Cookis },
+    { path: "italy", component:Italy },
+    { path: "chisiamo", component:Chisiamo },
+    { path: "competenze", component:Competenze },
+    { path: "fiducia", component:Fiducia},
+    { path: "riferimenti", component:Riferimenti},
+    { path: "servizi", component:Servizi},
+    { path: "contatto", component:Contatto},
     { path: "**", component:NotFound }
 ];
