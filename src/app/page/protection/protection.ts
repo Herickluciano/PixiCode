@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-protection',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './protection.html',
   styleUrl: './protection.css'
 })

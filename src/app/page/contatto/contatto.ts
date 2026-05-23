@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contatto',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './contatto.html',
   styleUrl: './contatto.css'
 })

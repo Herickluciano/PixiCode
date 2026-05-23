@@ -21,8 +21,9 @@ import { Contatto } from './page/contatto/contatto';
 
 
 
+
 export const routes: Routes = [
-    { path: "", component:Home }, // le path doit rester un champ vide pour le prende au demarage
+    { path: "", component: Home, pathMatch: 'full' }, // le path doit rester un champ vide pour le prende au demarage
     { path: "contact", component:Contact },
     { path: "about", component:About },
     { path: "confiance", component:Confiance },

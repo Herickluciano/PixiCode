@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-riferimenti',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './riferimenti.html',
   styleUrl: './riferimenti.css'
 })

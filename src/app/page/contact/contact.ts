@@ -1,43 +1,48 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms'; //  Import obligatoire pour ngModel
+import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule], //  Ajoute FormsModule ici
+  imports: [FormsModule, RouterLink],
   templateUrl: './contact.html',
   styleUrls: ['./contact.css']
 })
 export class Contact {
-subscribe() {
-throw new Error('Method not implemented.');
-}
-  title: any;
-  name: any;
-  time: any;
-  message: any;
-  email: any;
-messageStatus: any;
+  // Identifiants configurés pour luhamcode@gmail.com
+  private SERVICE_ID = 'pixicode_2024';
+  private TEMPLATE_ID = 'template_olqexsg';
+  private PUBLIC_KEY = '5U56CrryUmTnVD3H9';
 
-  sendEmail(form: any) {
+  sendEmail(form: NgForm) {
+    if (form.invalid) {
+      alert('Veuillez remplir correctement tous les champs.');
+      return;
+    }
+
+    // Préparation des données pour le template EmailJS
+    const templateParams = {
+      name: form.value.userName,
+      email: form.value.userEmail,
+      message: form.value.userMessage
+    };
+
     emailjs.send(
-      'pixicode_2024',
-      'template_olqexsg',
-      {
-        title: this.title,
-        name: this.name,
-        time: this.time,
-        message: this.message,
-        email: this.email
+      this.SERVICE_ID,
+      this.TEMPLATE_ID,
+      templateParams,
+      this.PUBLIC_KEY
+    ).then(
+      () => {
+        alert('🚀 Message envoyé avec succès !');
+        form.resetForm();
       },
-      '5U56CrryUmTnVD3H9'
-    ).then(() => {
-      alert('Message envoyé !');
-      form.resetForm();
-    }).catch((err) => {
-      console.error(err);
-      alert('Erreur lors de l’envoi');
-    });
+      (error) => {
+        console.error('Erreur EmailJS:', error);
+        alert("L'envoi a échoué. Vérifiez votre connexion.");
+      }
+    );
   }
 }

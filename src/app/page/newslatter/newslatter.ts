@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-newslatter',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './newslatter.html',
   styleUrl: './newslatter.css'
 })

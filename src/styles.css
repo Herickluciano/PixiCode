@@ -1299,7 +1299,6 @@ h1 h2 h3{
 }
 
 .contact_inner{
-    background-color: #fff;
     position: relative;
     box-shadow: 20px 22px 44px #cccc;
     border-radius: 25px;
@@ -1328,7 +1327,7 @@ h1 h2 h3{
 .contact_field .form-control{
     border-radius: 0px;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid  #cccc;;
 }
 .contact_field .form-control:focus{
     box-shadow: none;
@@ -1849,8 +1848,9 @@ padding: 20px;
 .text_contact{
 position: relative;
 padding: 5px;
-top: -40px;
+top: -30px;
 left: -87px;
+text-align: initial;
 color: #3d3d3c;
 }
   .text_expert{
@@ -2062,10 +2062,11 @@ opacity: 0;
 }
 .mont {
   position: relative;
-  top: -350px!important;
+  top: -360px!important;
   font-family: "Roboto Mono", monospace;
-  font-weight: bolder;
+  font-weight: normal;
   left: 12px;
+  font-size: 10px;
 }
 #container_page {
   color:#FFFFFF;
@@ -2081,6 +2082,7 @@ opacity: 0;
 #container {
   color:#f1f1f1;
   opacity: 0.8;
+  font-family: "Roboto Mono", monospace;
 }
   .para_2 {
     position:relative;
@@ -2379,6 +2381,8 @@ margin-top: -25px!important;
   height:45px;
   margin-bottom:45px;
   display:inline-block;
+   font-family: "Roboto Mono", monospace;
+ font-weight: 400;
 }
 
 }
@@ -2603,6 +2607,13 @@ top: 5px;
     font-size: 18px;
     font-family: "Roboto Mono", monospace;
   }
+   #container {
+    top: 65px!important;
+    position: relative;
+    font-size: 20px;
+    left: -15px;
+    font-family: "Roboto Mono", monospace;
+  }
   .cs-flex-group {
     
     position: relative;
@@ -2688,7 +2699,7 @@ text-align: justify;
     position: relative;
     top: 0;
     left: 0;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     margin: 10px auto;
     width: 100%;
@@ -2761,3 +2772,258 @@ text-align: justify;
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Général */
+  .app {
+    padding: 0 15px;
+    background-color: #D4D7CE!important;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+  }
+   #container {
+    top: 65px!important;
+    position: relative;
+    font-size: 26px;
+    left: 15px;
+  }
+  .cs-flex-group {
+    
+    position: relative;
+    top: -25px;
+  }
+.sous_titre{
+position: relative;
+width: 100%;
+top: 510px;
+left: -50px!important;
+text-align: justify;
+} 
+.resp{
+  position: relative;
+  top: 190px;
+  left: 90px;
+  color: #363636!important;
+}
+  .drapeau{
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  padding: 15px;
+}
+.lang{
+ position: relative;
+ left: -10px;
+ top: -5px;
+ font-family: "Roboto flex", monospace !important;
+ font-size: 18px;
+ color: #48B332;
+ visibility: hidden;
+}
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+
+  /* Logo */
+  .logo {
+    position: relative;
+    width: 165px;
+    height: auto;
+    top: -10px;
+  }
+
+  .nav-item {
+    position: relative;
+   left: -95px;
+   top: 15px;
+   font-family: "Roboto flex", monospace !important;
+ font-size: 14px;
+ font-weight: bolder;
+  }
+
+  /* Header image */
+  .head_1 {
+    width: 120% !important;
+    height: auto !important;
+    position: relative;
+    left: -33px!important;
+    top: -45px !important;
+    filter: brightness(50%);
+  }
+
+  /* Textes principaux */
+  .display_4 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .lead {  
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Navbar */
+  .adresse_nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px auto;
+    width: 10%;
+    font-weight: bolder;
+  }
+  .navbar .nav-link {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF!important;
+    font-weight: bold!important;
+    color: #1a1c20;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Sections principales */
+  .page,
+  .band {
+    flex-direction: column;
+    height: auto !important;
+    padding: 30px 20px;
+    align-items: flex-start;
+  }
+
+  .band_text {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .detail {
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    gap: 15px;
+  }
+
+  /* Services cards */
+  .service {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  figure.snip0061 {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  /* Contact */
+  .contact_field {
+    padding: 40px 20px;
+  }
+  .contact_info_sec {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  /* Tes styles ici */
+}
+
+
+
+/* Version iPad Pro / Grandes tablettes (Portrait) */
+@media screen and (min-width: 768px) and (max-width: 1112px) {
+ .app {
+  background-color: #D4D7CE!important;
+  color: #727471 !important;
+  line-height: 1.6;
+  font-family: "Roboto flex", monospace !important;
+  text-align: justify;
+ font-size: 24px;
+   word-spacing: normal;
+}
+ .drapeau{
+  position: absolute;
+  top: 15px;
+  left: 650px;
+  padding: 15px;
+}
+.adresse_nav{
+position: absolute;
+font-size: 14px!important;
+left: 250px;
+color: #4FB336;
+text-align: center;
+font-weight: lighter;
+text-align: center;
+width: 250px;
+top: 23px;
+}
+.mont {
+  position: relative;
+  top: -50px!important;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  left: -22px;
+}
+#container {
+  color:#FFFFFF;
+  font-size:36px;
+  font-weight:bold;  
+  position:absolute;
+  display:inline;
+  opacity: 0.8;
+  width: 500px;
+}
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:hsl(110, 95%, 49%);
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+  position: relative;
+  top: -8px;
+  font-size: 23px;
+}
+
+#flip div:first-child {
+  animation: show 9s linear infinite;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+}
+
+
+

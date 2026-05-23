@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-italy',
-  imports: [CommonModule, FormsModule, HttpClientModule],
+  imports: [CommonModule, FormsModule, HttpClientModule, RouterLink],
   templateUrl: './italy.html',
   styleUrls: ['./italy.css']
 })

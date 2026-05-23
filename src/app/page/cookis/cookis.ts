@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cookis',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './cookis.html',
   styleUrl: './cookis.css'
 })
