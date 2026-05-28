@@ -5,11 +5,11 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 require_once("database.php");
 
-// Récupération de la donnée envoyée par Angular
+// Récupération des données 
 $data = json_decode(file_get_contents("php://input"), true);
 $email = trim($data["email"] ?? "");
 
-// Vérification du format email
+// Vérification email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo json_encode([
         "status" => "error",
@@ -19,7 +19,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 try {
-    // Insertion dans la table newsletter
+    // table newsletter
     $stmt = $pdo->prepare("INSERT INTO newsletter (email) VALUES (:email)");
     $stmt->execute(["email" => $email]);
 
@@ -29,7 +29,7 @@ try {
     ]);
 
 } catch (PDOException $e) {
-    if ($e->getCode() == 23000) { // Doublon
+    if ($e->getCode() == 23000) { 
         echo json_encode([
             "status" => "error",
             "message" => "Cet email est déjà inscrit."

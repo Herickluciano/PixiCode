@@ -11,7 +11,7 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./contact.css']
 })
 export class Contact {
-  // Identifiants configurés pour luhamcode@gmail.com
+  // configurés pour luhamcode@gmail.com
   private SERVICE_ID = 'pixicode_2024';
   private TEMPLATE_ID = 'template_olqexsg';
   private PUBLIC_KEY = '5U56CrryUmTnVD3H9';
@@ -22,7 +22,7 @@ export class Contact {
       return;
     }
 
-    // Préparation des données pour le template EmailJS
+    //  données pour le template EmailJS
     const templateParams = {
       name: form.value.userName,
       email: form.value.userEmail,
@@ -36,7 +36,7 @@ export class Contact {
       this.PUBLIC_KEY
     ).then(
       () => {
-        alert('🚀 Message envoyé avec succès !');
+        alert(' Message envoyé avec succès !');
         form.resetForm();
       },
       (error) => {

@@ -22,7 +22,7 @@
       <p>{{ 'luhamcode@gmail.com' }}<br>+39 327 803 6337 / +337 58 69 42 51</p>
    </div>
    <div class="drapeau">
-      <a routerLink="//"><img src="/images/france.jpg" alt="france" class="pays_1"></a> 
+      <a routerLink="/"><img src="/images/france.jpg" alt="france" class="pays_1"></a> 
       <a routerLink="/italy"><img src="/images/italie.png" alt="italie" class="pays_2"></a>
       <span class="lang">Langues</span>
    </div>
@@ -31,13 +31,13 @@
 <div class="app">
    <div class="body">
       <div class="page text-white py-5">
-         <a class="navbar-brand" routerLink="//">
+         <a class="navbar-brand" routerLink="/">
             <img src="/images/head_1.jpg" alt="luhamcode" class="head_1_page">
          </a>
          <div class="container para_2">
             <div id="container_page">
                <strong>LuhamCode</strong>
-               <span class="indic"><a routerLink="//" role="button"> Accueil</a> -> <span class="active">Contact</span></span>   
+               <span class="indic"><a routerLink="/" role="button"> Accueil</a> -> <span class="active">Contact</span></span>   
                <div id="flip">
                   <div><div>Marketing digital</div></div>
                   <div><div>Solutions business</div></div>
@@ -67,8 +67,6 @@
                                  <div class="contact_field">
                                     <h3 class="mb-3">Parlez maintenant..!</h3>
                                     <p class="mb-4">Un projet, une question ? Parlons-en dès aujourd’hui !!</p>
-
-                                    <!-- FORMULAIRE CORRIGÉ -->
                                     <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
                                        <div class="mb-3">
                                           <label class="form-label">Nom complet</label>
@@ -103,9 +101,9 @@
                            <div class="col-md-2">
                               <div class="right_conatct_social_icon d-flex align-items-end">
                                  <div class="socil_item_inner d-flex">
-                                    <li><a routerLink="#"><i class="fab fa-facebook-square"></i></a></li>
-                                    <li><a routerLink="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a routerLink="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a routerLink="/#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a routerLink="/#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a routerLink="/#"><i class="fab fa-twitter"></i></a></li>
                                  </div>
                               </div>
                            </div>

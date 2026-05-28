@@ -1173,8 +1173,7 @@ figure.snip0061.hover:before {
   color:#FFFFFF;
   font-size:36px;
   top: 145px;
-  left: 670px;
-  font-weight:bold;  
+  left: 670px; 
   position:absolute;
   display:inline;
   opacity: 0.8;
@@ -1200,6 +1199,7 @@ figure.snip0061.hover:before {
   display:inline-block;
   position: relative;
   top: -8px;
+  font-family: "Roboto flex", monospace;
 }
 
 #flip div:first-child {
@@ -1244,8 +1244,8 @@ position: relative;
 }
 .drapeau{
   position: absolute;
-  top: -5px;
-  left: 1230px;
+  top: 1px;
+  left: 1270px;
   padding: 15px;
 }
 .lang{
@@ -1286,7 +1286,7 @@ filter: brightness(20%);
 }
 h1 h2 h3{
    font-family: "Roboto Mono", monospace!important;
- font-weight: bold;
+ font-weight: normal;
  color: #3C6C29!important;
 }
 
@@ -1782,7 +1782,7 @@ font-size: 16px!important;
 }
 .conter{
   font-family: "Roboto flex", monospace!important;
-font-size: 22px!important; 
+font-size: 16px!important; 
 width: 100%!important;
 text-align: justify;
 }
@@ -2061,8 +2061,8 @@ visibility: hidden;
 opacity: 0;
 }
 .mont {
-  position: relative;
-  top: -360px!important;
+  position: absolute;
+  top: 57px!important;
   font-family: "Roboto Mono", monospace;
   font-weight: normal;
   left: 12px;
@@ -2381,7 +2381,7 @@ margin-top: -25px!important;
   height:45px;
   margin-bottom:45px;
   display:inline-block;
-   font-family: "Roboto Mono", monospace;
+ font-family: "Roboto flex", monospace;
  font-weight: 400;
 }
 
