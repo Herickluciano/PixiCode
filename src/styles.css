@@ -25,7 +25,6 @@ a {
   line-height: 1.6;
   font-family: "Roboto flex", monospace !important;
   text-align: justify;
- 
    word-spacing: normal;
 }
 
@@ -40,7 +39,6 @@ a {
 .page_expert {
   position: relative;
   top: 90px;
- 
 }
 
 /* Mobile - 360px */
@@ -424,11 +422,13 @@ body {
 
 .adresse_nav{
 position: absolute;
-top: 10px;
-left: 280px;
+top: 13px;
+left: 270px;
 color: #4FB336;
 font-weight: lighter;
 text-align: center;
+font-size: 12px;
+width: 200px;
 }
 h1, h2, h3{
 color: #48B332;
@@ -571,7 +571,7 @@ top: -40px;
 .partie_5{
 position: relative;
 left: 70px;
-top: -30px;
+top: -70px;
 } 
 .roboto-flex {
   font-family: "Roboto Flex", sans-serif;
@@ -579,8 +579,11 @@ top: -30px;
 .navbar .nav-link{
   background-color: #ffffff!important;
   font-family: "Roboto Mono", monospace!important;
+  font-size: 14px;
 font-weight: bold!important;
 color: #727271;
+position: relative;
+left: -125px;
 }
 .page{
   background-color: #48B332!important;
@@ -764,81 +767,81 @@ color: #48B332;
 position: relative;
 width: 467px;
 left: 0px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_social{
 position: relative;
 width: 467px;
 left: 0px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_1_expert{
 position: relative;
 width: 467px;
 left: 50px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_2_expert{
 position: relative;
 width: 467px;
 left: 60px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_1{
 position: relative;
 width: 467px;
 left: 50px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .sociale{
 position: relative;
 width: 467px;
 left: 100px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .social{
 position: relative;
 width: 467px;
 left: 100px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .hacker{
 position: relative;
-width: 467px;
-height: 440px;
-filter: brightness(60%);
+width: 477px;
+height: 320px;
+filter: brightness(80%);
 }
 .ia{
 position: relative;
 width: 467px;
 left: 50px;
 top: 23px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_serv{
 position: relative;
 width: 467px;
 top: 38px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_2{
 position: relative;
 width: 467px;
 top: 38px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_about{
 position: relative;
 width: 467px;
 top: 94px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .body_vision{
 position: relative;
 width: 467px;
 height: 330px;
 top: 4px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 
 .body_mission{
@@ -846,7 +849,7 @@ position: relative;
 width: 467px;
 height: 360px;
 top: 4px;
-filter: brightness(60%);
+filter: brightness(80%);
 }
 .titre_expert{
 position: relative;
@@ -1189,6 +1192,7 @@ figure.snip0061.hover:before {
 #flip {
   height:50px;
   overflow:hidden;
+  top: 10px;
 }
 
 #flip > div > div {
@@ -1198,7 +1202,6 @@ figure.snip0061.hover:before {
   margin-bottom:45px;
   display:inline-block;
   position: relative;
-  top: -8px;
   font-family: "Roboto flex", monospace;
 }
 
